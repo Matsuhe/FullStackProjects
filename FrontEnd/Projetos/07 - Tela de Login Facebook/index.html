@@ -23,11 +23,11 @@
 			<div class="login-senha">
 				<div class="form-element">
 					<p>Email ou telefone</p>
-					<input type="email" placeholder="Digite seu email" alt="Email">
+					<input type="email" placeholder="Digite seu email">
 				</div><!-- form-element -->
 				<div class="form-element">
 					<p>Senha</p>
-					<input type="password" placeholder="Digite sua senha" alt="Senha">
+					<input type="password" placeholder="Digite sua senha">
 					<div class="esqueceusenha">
 						<a href="#">
 							<p>Esqueceu a sua senha?</p>
@@ -35,7 +35,7 @@
 					</div><!-- esqueceusenha -->
 				</div><!-- form-element -->
 				<div class="form-element">
-					<input type="submit" alt="Enviar">
+					<input type="submit">
 				</div><!-- form-element -->
 			</div><!--login-senha-->
 			<div class="clear"></div>
@@ -70,6 +70,54 @@
 						<input placeholder="Senha" type="password">
 					</div><!-- w100 -->
 					<div class="w100">
+						<h3>Data de Nascimento</h3>
+						<select action="processa_dados.php" name="nascimento-dia" id="data" class="nascimento">
+							<?php
+                                for ($i=1; $i < 31 ; $i++) {
+                            ?>
+							<option value="<?php echo $i; ?>">
+								<?php echo $i; ?>
+							</option>
+							<?php } ?>
+						</select>
+						data
+						<select name="nascimento-mes" id="data1" class="nascimento">
+							<option value="1">Janeiro</option>
+							<option value="2">Fevereiro</option>
+							<option value="3">Março</option>
+							<option value="4">Abril</option>
+							<option value="5">Maio</option>
+							<option value="6">Junho</option>
+							<option value="7">Julho</option>
+							<option value="8">Agosto</option>
+							<option value="9">Setembro</option>
+							<option value="10">Outubro</option>
+							<option value="11">Novembro</option>
+							<option value="12">Dezembro</option>
+						</select>
+						<select name="nascimento-ano" id="data2" class="nascimento">
+							<?php
+                                for ($i=1940; $i <= 2002 ; $i++) {
+                            ?>
+							<option value="<?php echo $i; ?>">
+								<?php echo $i; ?>
+							</option>
+							<?php } ?>
+						</select>
+						<div class="clear"></div><!-- clear -->
+					</div><!-- w100 -->
+					<div class="w100">
+						<div class="input-radio">
+							<input type="radio" name="sexo" value="masculino">
+							<h2>Masculino</h2>
+						</div><!-- input-radio -->
+						<div class="input-radio">
+							<input type="radio" name="sexo" value="feminino">
+							<h2>Feminino</h2>
+						</div><!-- input-radio -->
+						<div class="clear"></div><!-- clear -->
+					</div><!-- w100 -->
+					<div class="w100">
 						<input type="submit" name="acao" value="Cadastrar!">
 					</div><!-- w100 -->
 				</form><!-- criar-conta -->
@@ -77,6 +125,54 @@
 		</div><!-- center -->
 		<div class="clear"></div> <!-- clear -->
 	</section><!--main -->
+	<section class="linguas">
+        <div class="center">
+                    <a class="selected" href="">Português (Brasil)</a>
+                    <a href="">Português (Brasil)</a>
+                    <a href="">Português (Brasil)</a>
+                    <a href="">Português (Brasil)</a>
+                    <a href="">Português (Brasil)</a>
+                    <a href="">Português (Brasil)</a>
+        </div>
+        <div class="center">
+			<a href="">Lorem Ipsum</a>
+			<a href="">Lorem Ipsum</a>
+			<a href="">Lorem Ipsum</a>
+			<a href="">Lorem Ipsum</a>
+			<a href="">Lorem Ipsum</a>
+			<a href="">Lorem Ipsum</a>
+			<a href="">Lorem Ipsum</a>
+			<a href="">Lorem Ipsum</a>
+			<a href="">Lorem Ipsum</a>
+			<a href="">Lorem Ipsum</a>
+			<a href="">Lorem Ipsum</a>
+			<a href="">Lorem Ipsum</a>
+			<a href="">Lorem Ipsum</a>
+			<a href="">Lorem Ipsum</a>
+			<a href="">Lorem Ipsum</a>
+			<a href="">Lorem Ipsum</a>
+			<a href="">Lorem Ipsum</a>
+			<a href="">Lorem Ipsum</a>
+			<a href="">Lorem Ipsum</a>
+			<a href="">Lorem Ipsum</a>
+			<a href="">Lorem Ipsum</a>
+			<a href="">Lorem Ipsum</a>
+			<a href="">Lorem Ipsum</a>
+			<a href="">Lorem Ipsum</a>
+			<a href="">Lorem Ipsum</a>
+			<a href="">Lorem Ipsum</a>
+			<a href="">Lorem Ipsum</a>
+			<a href="">Lorem Ipsum</a>
+			<a href="">Lorem Ipsum</a>
+			<a href="">Lorem Ipsum</a>
+			<a href="">Lorem Ipsum</a>
+			<a href="">Lorem Ipsum</a>
+			<a href="">Lorem Ipsum</a>
+			<a href="">Lorem Ipsum</a>
+			<a href="">Lorem Ipsum</a>
+			<a href="">Lorem Ipsum</a>
+		</div>
+    </section>
 
 </body>
 
