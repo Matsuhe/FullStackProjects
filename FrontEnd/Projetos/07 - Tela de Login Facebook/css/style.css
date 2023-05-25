@@ -29,10 +29,13 @@ header{
     color: white;
     font-size: 40px;
     padding-left: 3.6%;
+
 }
 
 .login-senha{
     float: right;
+
+
 }
 
 .form-element{
@@ -180,6 +183,12 @@ form w100 h2{
 form select.nascimento{
     float: left;
     margin-top: 5px;
+    padding: 3px 1px;
+}
+
+.w100 .nascimento{
+    text-align: center;
+    font-size: 15px;
 }
 
 .input-radio h2{
@@ -222,6 +231,56 @@ section.linguas .center{
 section.linguas >.center:last-of-type{
     padding-top: 10px;
     border-bottom: 0;
+}
+
+@media screen and (max-width: 768px){
+    .logo,
+    .login-senha{
+        width: 100%;
+        text-align: center;
+        float: none;
+    }
+
+    .esqueceusenha{
+        position: static;
+        margin-top: 5px;
+        
+    }
+
+    .login-senha{
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+    .login-senha div.form-element{
+        display: block;
+        margin: 10px 0;
+    }
+    
+    .login-senha div.form-element p{
+        color: white;
+        font-size: 14px;
+    }
+    .login-senha div.form-element input[type=email], 
+    .login-senha div.form-element input[type=password]{
+        margin-top: 5px;
+        border: 0;
+        padding: 5px;
+        outline: none;
+        width: 100%;
+        max-width: 500px;
+    }
+    .login-senha div.form-element input[type=submit]{
+        width: 140px;
+    }
+
+    div.img-mapa{
+        display: none;
+    }
+
+    div.abrir-conta{
+        width: 100%;
+    }
 }
 
 
