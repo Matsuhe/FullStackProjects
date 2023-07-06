@@ -350,8 +350,5 @@ MigrationBackup/
 .ionide/
 
 # ignorar os arquivos de validacao de html
-.htmlvalidate
-
-# ignorar os arquivos de validacao de html
 .htmlvalidate.json
 
