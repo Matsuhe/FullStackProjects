@@ -1,0 +1,77 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+.clear{
+	clear: both;
+}
+
+/* Divs gerais */
+
+.container{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	/* background-color: gray; */
+}
+
+/* ------- */
+
+header{
+	background-color: #D6D6D6;
+	padding:10px 2%;
+}
+
+.logo-1{
+	float: left;
+	width: 150px;
+	height: 60px;
+	background-image: url('../images/logo1.png');
+	/* background-size: 100% 100%; */
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	/* background-color: purple; */
+}
+
+.logo-2{
+	float: right;
+	width: 160px;
+	height: 60px;
+	background-image: url('../images/logo2.png');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	/* background-color: green; */
+}
+
+@media screen and (max-width: 510px){
+
+	header{
+		text-align: center;
+	}
+
+	.teste{
+		border: 5px solid black;
+	}
+
+	.logo-1,.logo-2{
+		margin-top:10px;
+		width: 100%;
+		background-size: contain;
+		display: inline-block;
+		float: none;
+		/* border: 5px solid red; */
+	}
+
+
+}
+
+
