@@ -7,11 +7,11 @@
     <meta name="keywords" content="palavras,separadas,por,virgulas">
     <meta name="author" content="Matheus S. Volotão">
     <link rel="stylesheet" href="src/css/style.css">
-    <title>Minha Landpage</title>
+    <title>Treinando Java Script</title>
 </head>
 <body>
     <header>
-        <h1>title</h1>
+        <h1>title1</h1>
     </header>
     <main>
         <h2>Page Title</h2>
@@ -26,26 +26,32 @@
         console.log("Ola mundo");
         //printar um alerta dps que todos os elementos carregarem
         window.onload = function(){
-            var nome = "Matheus",idade = 27;
-            alert("Olá mundo!");
-            alert("Voce tem "+idade+" anos");
-            // arrays 
+            var nome = "Matheus",idade = 26;
+            //alert("Olá mundo!");
+            //alert("Voce tem "+idade+" anos");
+            
+            //Arrays//
+            
             var nomeArray = [];
             nomeArray[0] = 'Matheus';
             nomeArray[100] = 'Santos';
 
             console.log(nome[1]);
 
-            //Objetos
+            //Objetos//
 
             var animal = {};
             animal.nome = [];
             animal.peso = '24';
             // ou 
             animal['peso'] = '25';
-            animal.nome[0] = 'Matheus';
-            animal.nome[1] = 'Santos';
+            animal.nome[0] = 'Rapoza';
+            animal.nome[1] = 'Camaleao';
+
+            console.log(typeof(animal));
         }
     </script>
+    <script src="src/js/function.js"></script>
+    
 </body>
 </html>
