@@ -13,7 +13,7 @@ window.onload = function () {
         map = new google.maps.Map(document.getElementById("mapa"), mapProp);
     }
 
-    function addMarker(lat,long,icon,content){
+    function addMarker(lat,long,icon,content,click){
         var latLng={'lat':lat,'lng':long};
 
         var marker = new google.maps.Marker({
