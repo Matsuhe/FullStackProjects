@@ -1,0 +1,118 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: Inter, Georgia, Times, serif
+}
+
+html,body{
+	height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.clear{
+	clear: both;
+}
+
+/* Header */
+
+header{
+    background-color: #333333;
+    padding: 10px 5px 10px 5px;
+}
+
+.center {
+	width: 100%;
+	padding: 0 5%;
+	margin: 0 auto;
+}
+
+.slogan{
+    float: left;
+    color: #ffffffcc;
+    font-size: 40px;
+}
+
+.butao-tema {
+	float: right;
+}
+
+.butao-tema img {
+	width: 50px;
+	cursor: pointer;
+}
+
+.solelua {
+	background: none;
+}
+
+/* === main === */
+
+main {
+    flex: 1;
+    padding: 20px; /* Adicione margens ou preenchimento conforme necessário */
+}
+
+.container{
+	text-align: center;
+}
+
+main button{
+	background: #069;
+	color:white;
+	font-size: 32px;
+	padding:8px 20px;
+	cursor: pointer;
+	border:0;
+}
+
+h1{
+	padding: 20px 0;
+	font-size: 72px;
+}
+
+.container2{
+	width: 100%;
+	padding: 0 5%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+/* === footer === */
+
+.container{
+	max-width: 1280px;
+	margin:0 auto;
+}
+
+footer{
+	padding:40px 2%;
+	background: #333333;
+	color: white;
+}
+
+footer p:nth-of-type(1){
+	float: left;
+	font-size: 14px;
+}
+
+footer p:nth-of-type(2){
+	float: right;
+	font-size: 14px;
+}
+
+/* ===== Para o JavaScript ===== */
+
+.modo-escuro {
+	background-color: #a8a8a8;
+}
+
+
+body.modo-escuro {
+	background-color: #212121;
+	color: #f5f5f5;
+}

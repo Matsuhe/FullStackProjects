@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="Conteudo do meu site">
+    <meta name="keywords" content="palavras,separadas,por,virgulas">
+    <meta name="author" content="Matheus S. Volotão">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap" rel="stylesheet">
+    <title>Projeto Cronometro - JavaScript</title>
+</head>
+
+<body>
+    <audio id="sound" src="alarm.mp3" style="display: none;"></audio>
+    <header>
+        <div class="center">
+            <div class="slogan">
+                <span>Tic Tac</span>
+            </div><!-- logo -->
+            <div class="butao-tema">
+                <button id="alterar-tema" type="button" class="solelua">
+                    <img id="botao-troca" class="botao-troca1" src="src/images/sun.png" alt="Sol">
+                </button><!--butao sol e lua-->
+            </div><!-- butao-tema -->
+        </div><!-- center -->
+        <div class="clear"></div><!-- clear -->
+    </header>
+    <main>
+        <div class="container">
+            <h1>Cronômetro</h1>
+            <div class="container2">
+                <h2>Minutos:</h2>
+                <select id="minutos" name="minutos"></select>
+                <h2>Segundos:</h2>
+                <select id="segundos" name="segundos"></select>
+                <br>
+                <br>
+                <button type="button" id="comecar">Começar!</button>
+                <div id="display">
+                    <h3></h3>
+                </div><!--display-->
+            </div><!-- container2 -->
+        </div><!--container-->
+    </main>
+
+    <footer>
+		<div class="container">
+			<p>Todos os direitos reservados</p>
+			<p>contato@example.com</p>
+			<div class="clear"></div>
+		</div><!--container-->
+	</footer>
+    <script src="src/js/index.js"></script>
+</body>
+
+</html>
