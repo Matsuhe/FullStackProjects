@@ -13,4 +13,13 @@ body{
     clear: both;
 }
 
+.artigo1{
+    background: rgb(210, 210, 210);
+}
+
+.artigo2{
+    background: rgb(100,100, 100);
+    margin-top: 200px;
+}
+
 
