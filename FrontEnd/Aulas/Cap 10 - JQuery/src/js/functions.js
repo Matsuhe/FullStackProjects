@@ -24,30 +24,68 @@
 
 // === treinando eventos ===
 
-$(function () {
-	$(".artigo1").click(function () {
-		$(".artigo2").css("background-color", "red");
-	});
-	$(".artigo1").hover(
-		function () {
-			$(".artigo2").css("background-color", "blue");
-		},
-		function () {
-			$(".artigo2").css("background-color", "rgb(100,100,100)");
-		}
-	);
+// $(function () {
+// 	$(".artigo1").click(function () {
+// 		$(".artigo2").css("background-color", "red");
+// 	});
+// 	$(".artigo1").hover(
+// 		function () {
+// 			$(".artigo2").css("background-color", "blue");
+// 		},
+// 		function () {
+// 			$(".artigo2").css("background-color", "rgb(100,100,100)");
+// 		}
+// 	);
 
-	$("textarea")
-		.focus(function () {
-			//Executa alguma função quando existe foco no elemento.
-			console.log("Foco!");
-		})
-		.blur(function () {
-			//Executa uma função quando retiramos o foco.
-			console.log("Retiramos o foco!");
-		});
+// 	$("textarea")
+// 		.focus(function () {
+// 			//Executa alguma função quando existe foco no elemento.
+// 			console.log("Foco!");
+// 		})
+// 		.blur(function () {
+// 			//Executa uma função quando retiramos o foco.
+// 			console.log("Retiramos o foco!");
+// 		});
 
-	$("select").change(function () {
-		console.log("Meu select foi alterado!");
-	});
+// 	$("select").change(function () {
+// 		console.log("Meu select foi alterado!");
+// 	});
+// });
+
+$(function(){
+
+	/*
+	var timer;
+	$(window).scroll(function(){
+		//Evento de quando o scroll ocorre.
+	})
+
+	$(window).resize(function(){
+		//Evento de quando redimensionamos a tela.
+		//console.log("Minha tela está sendo redimensionada!");
+		clearTimeout(timer);
+		timer = setTimeout(function(){
+			location.href = "http://localhost/Curso%20WebMaster/JQuery/";
+		},1000);
+
+	})
+	
+	$('a').click(function(e){
+		//e.preventDefault();
+	})
+
+	*/
+
+	$('body').click(function(){
+		$('.box').css('opacity','0.1');
+	})
+
+	$('.box').click(function(e){
+		e.stopPropagation();
+	})
+
+
+
+	
+	
 });
