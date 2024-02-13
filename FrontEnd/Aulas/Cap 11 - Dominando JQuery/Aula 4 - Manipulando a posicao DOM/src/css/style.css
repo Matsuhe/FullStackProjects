@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    height: 100%;
+}
+
+.clear{
+    clear: both;
+}
+
+.box{
+	/* width: 500px; */
+	width: 100%;
+    padding: 30px;
+	/* height: 500px; */
+	/* margin: 0 auto; */
+	background-color: #ccc;
+}
+
+h1.texto1{
+    color: red;
+}
