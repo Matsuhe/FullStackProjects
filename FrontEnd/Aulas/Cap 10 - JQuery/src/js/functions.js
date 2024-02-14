@@ -1,6 +1,6 @@
-// $(function() {
-//     alert( "The DOM is now loaded and can be manipulated." );
-// });
+// $(function(){
+// 	alert("Olá mundo");
+// })
 
 // $(document).ready(function(){
 // 	alert("Olá mundo!: ready_function");
@@ -11,9 +11,9 @@
 // })
 
 // espera todo o documento carregar(fotos,videos)
-// $(window).on('load',function(){
-// 	alert("Olá mundo");
-// })
+$(window).on('load',function(){
+	alert("Olá mundo");
+})
 
 // $(function(){
 
@@ -52,40 +52,36 @@
 // 	});
 // });
 
-$(function(){
-
-	/*
-	var timer;
-	$(window).scroll(function(){
-		//Evento de quando o scroll ocorre.
-	})
-
-	$(window).resize(function(){
-		//Evento de quando redimensionamos a tela.
-		//console.log("Minha tela está sendo redimensionada!");
-		clearTimeout(timer);
-		timer = setTimeout(function(){
-			location.href = "http://localhost/Curso%20WebMaster/JQuery/";
-		},1000);
-
-	})
-	
-	$('a').click(function(e){
-		//e.preventDefault();
-	})
-
-	*/
-
-	$('body').click(function(){
-		$('.box').css('opacity','0.1');
-	})
-
-	$('.box').click(function(e){
-		e.stopPropagation();
-	})
-
-
+// $(function(){
 
 	
+// 	var timer;
+// 	$(window).scroll(function(){
+// 		//Evento de quando o scroll ocorre.
+// 	})
+
+// 	$(window).resize(function(){
+// 		//Evento de quando redimensionamos a tela.
+// 		//console.log("Minha tela está sendo redimensionada!");
+// 		clearTimeout(timer);
+// 		timer = setTimeout(function(){
+// 			location.href = "http://localhost/Curso%20WebMaster/JQuery/";
+// 		},1000);
+
+// 	})
 	
-});
+// 	$('a').click(function(e){
+// 		//e.preventDefault();
+// 	})
+
+	
+
+// 	$('body').click(function(){
+// 		$('.box').css('opacity','0.1');
+// 	})
+
+// 	$('.box').click(function(e){
+// 		e.stopPropagation();
+// 	})
+
+// });
