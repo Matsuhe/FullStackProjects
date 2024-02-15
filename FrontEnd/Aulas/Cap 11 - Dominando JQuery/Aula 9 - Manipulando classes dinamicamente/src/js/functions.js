@@ -1,44 +1,18 @@
 $(function(){
 
-	/*
+	$('.box1').addClass('minhaclasse');
 
-	var timer;
-	var timeOut = function(){
-		$('.box2').animate({
-		'width':'40%',
-		'height':'500px',
-		'marginLeft':'100px',
-		'paddingTop':'200px'
-		},2000);
-	}
+	//$('.minhaclasse').remove();
 
-	$('body').click(function(){
-		alert("Animação com timeout foi cancelada!");
-		clearTimeout(timer);
-	})
+	$('.box1').removeClass('minhaclasse');
 
-	
-	$('.box1').animate({
-		'width':'40%',
-		'height':'500px',
-		'marginLeft':'100px',
-		'paddingTop':'200px'
-	},2000,function(){
-		timer = setTimeout(timeOut,3000);
-	});
+	var el = $('.box1').find('.child1').find('.child2');
 
-	*/
+	el.css('color','green');
 
-	var timer;
+	$('minhatag').attr('meuattr','outrovalor');
 
-	$('body').click(function(){
-		console.log("Intervalo cancelado");
-		clearInterval(timer);
-	})
+	alert($('minhatag').attr('meuattr'));
 
-	timer = setInterval(function(){
-		alert('olá mundo');
-	},3000);
-	
 
 });
