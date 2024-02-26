@@ -1,33 +1,59 @@
 $(function(){
 
-	// essa funcao sera ativado sempre que a janela é rolada
-	$(window).scroll(function(){
-		//	Obtém a posição vertical atual da janela em relação ao topo.
-		var windowOffY = $(window).scrollTop();
-		// Obtém a altura da janela.
-		var windowHeight = $(window).height();
-		//  Itera sobre cada elemento com a classe sessao.
-		console.log('Window Scroll Top:', windowOffY);
-        //console.log('Window Height:', windowHeight);
-		$('.sessao').each(function(){
-			// Obtém a posição vertical do elemento .sessao em relação ao topo.
-			var elOffY = $(this).offset().top;
-			console.log('Element Offset Top:', elOffY);
-			// Se a parte superior do elemento (deslocada por 30 pixels) estiver abaixo da parte inferior da janela E a parte inferior do elemento estiver acima da parte superior da janela, então:
-			// 	Remove a borda inferior de todas as âncoras ($('a').css('border-bottom','0')).
-			// 	Obtém o atributo target do elemento .sessao.
-			// 	Adiciona uma borda inferior ao elemento com a classe correspondente ($('.'+target).css('border-bottom','2px solid #333')).
-			// 	A função retorna, indicando que a operação foi concluída para esta sessao.
-			if(elOffY+30 < (windowOffY + windowHeight)){
-					//console.log('Element in View:', this);
-					$('a').css('border-bottom','0');
-					var target = $(this).attr('target');
-					$('.'+target).css('border-bottom','2px solid #333');
-					return;
+	var indiceAtual = 0;
+	var indiceMaximo = $('.slider img').length;
+	var delay = 5000;
+
+	initSlider();
+	cliqueSlider();
+
+	function initSlider(){
+		for(var i = 0; i < indiceMaximo; i++){
+		/*<span style="background: #069;"></span>
+		<span></span>
+		<span></span>
+		*/
+			if(i == 0){
+				$('.bullets-nav').append('<span style="background:#069;"></span>');
+			}else{
+				$('.bullets-nav').append('<span></span>');
 			}
+		}
+		//Curiosidades 1*
+		$('.slider img').eq(0).fadeIn();
+		setInterval(function(){
+			alternarSlider();
+		},delay);
+	}
+
+	function cliqueSlider(){
+		$('.bullets-nav span').click(function(){
+			$('.slider img').eq(indiceAtual).stop().fadeOut(2000);
+			indiceAtual = $(this).index();
+			$('.slider img').eq(indiceAtual).stop().fadeIn(2000);
+			$('.bullets-nav span').css('background-color','#ccc');
+			$(this).css('background-color','#069');
 		});
-	})
+	}
 
+	function alternarSlider(){
+		$('.slider img').eq(indiceAtual).stop().fadeOut(2000);
+		indiceAtual+=1;
+		if(indiceAtual == indiceMaximo)
+			indiceAtual = 0;
+		$('.bullets-nav span').css('background-color','#ccc');
+		$('.bullets-nav span').eq(indiceAtual).css('background-color','#069');
+		$('.slider img').eq(indiceAtual).stop().fadeIn(2000);
 
-
+	}
+	
 });
+
+// === Curisidades ===
+
+// 1* outro modo de fazer o slider
+// $('.slider img').each(function (i) {
+// 	if(i == 0){
+// 		$(this).fadeIn();
+// 	}
+// })
