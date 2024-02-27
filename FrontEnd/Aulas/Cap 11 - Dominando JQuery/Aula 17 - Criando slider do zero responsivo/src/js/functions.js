@@ -19,8 +19,8 @@ $(function(){
 				$('.bullets-nav').append('<span></span>');
 			}
 		}
-		//Curiosidades 1*
-		$('.slider img').eq(0).fadeIn();
+		
+		$('.slider img').eq(0).fadeIn(); //Curiosidades 1*
 		setInterval(function(){
 			alternarSlider();
 		},delay);

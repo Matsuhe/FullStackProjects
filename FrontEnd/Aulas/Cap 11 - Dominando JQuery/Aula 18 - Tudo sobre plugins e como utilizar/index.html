@@ -1,36 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
+
 <head>
-	<title>Iniciando com JQuery</title>
-	<link href="css/font-awesome.css" rel="stylesheet"/>
-	<link href="css/jssocials.css" rel="stylesheet" />
-	<link href="css/jssocials-theme-minima.css" rel="stylesheet" />
-	<link href="css/jquery.fancybox.css" rel="stylesheet" />
-	<link href="css/style.css" rel="stylesheet" />
-	<meta charset="utf-8" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="Conteudo do meu site">
+    <meta name="keywords" content="palavras,separadas,por,virgulas">
+    <meta name="author" content="Matheus S. Volotão">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="src/css/jssocials.css">
+    <link rel="stylesheet" href="src/css/jssocials-theme-flat.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+
+    <title>title</title>
 </head>
+
 <body>
+    <header>
+        <h1>Explorando Plugins</h1>
+    </header>
+    <article>
+        <header>
+            <h2>Título do meu artigo</h2>
+        </header>
+        <p>Meu conteúdo</p>
+    </article>
 
-<article>
-	<header>
-		<h2>Título do meu artigo</h2>
-	</header>
-	<p>Meu conteúdo</p>
-</article>
+    <div id="social-share"></div>
 
-<div id="social-share"></div>
+    <input type="text" name="telefone">
+    <input type="text" name="data">
 
-<input type="text" name="telefone" />
-<input type="text" name="data" />
+    <a href="src/images/img1.jpg" data-fancybox="gallery" data-caption="Single image">
+        <img src="src/images/img1.jpg" alt="imagem1">
+    </a>
+    <a href="src/images/img2.jpg" data-fancybox="gallery" data-caption="Single image">
+        <img src="src/images/img2.jpg" alt="imagem2">
+    </a>
 
-<a rel="galeria1" href="imagens/img1.jpg"><img src="imagens/img1.jpg" /></a>
-<a rel="galeria1" href="imagens/img2.jpg"><img src="imagens/img2.jpg" /></a>
-<a rel="galeria1" href="imagens/img3.jpg"><img src="imagens/img3.jpg" /></a>
 
-<script src="js/jquery.js"></script>
-<script src="js/jssocials.min.js"></script>
-<script src="js/jquery.mask.js"></script>
-<script src="js/jquery.fancybox.js"></script>
-<script src="js/functions.js"></script>
+    <!-- <a rel="galeria1" href="src/images/img1.jpg"><img src="src/images/img1.jpg" alt="imagem1"></a>
+        <a rel="galeria1" href="src/images/img2.jpg"><img src="src/images/img2.jpg" alt="imagem2"></a>
+        <a rel="galeria1" href="src/images/img3.jpg"><img src="src/images/img3.jpg" alt="imagem3"></a> -->
+
+    <script src="src/js/jquery.js"></script>
+    <script src="src/js/jssocials.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="src/js/jquery.mask.js"></script>
+    <script src="src/js/functions.js"></script>
 </body>
+
 </html>
