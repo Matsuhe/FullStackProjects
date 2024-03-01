@@ -13,7 +13,6 @@
 </head>
 
 <body>
-
 	<header>
 		<div class="container">
 			<div class="logo"></div><!--logo-->
@@ -86,23 +85,50 @@
 		</div><!--part1-->
 
 		<div class="part2">
-			<div class="sobre-autor">
-				<div class="titulo-autor">
-					<div class="wraper-titulo-autor">
-						<h2>Matsuhe</h2>
-						<p>Desenvolvedor Júnior</p>
-					</div><!--wraper-titulo-autor-->
-					<div class="img-autor"></div>
-				</div><!--titulo-autor-->
-				<div class="texto-autor">
-					<p>Proin sagittis, risus ut tempus condimentum, urna est volutpat augue, a placerat ligula magna tincidunt sapien.
-						Ut tempus pulvinar ante, at euismod orci.</p>
-				</div><!--texto-autor-->
-			</div><!--sobre-autor-->
+			<div class="scrollEquipe">
+				<div class="scroll-wraper">
+					<div class="sobre-autor">
+						<div class="titulo-autor">
+							<div class="wraper-titulo-autor">
+								<h2>Matsuhe</h2>
+								<p>Desenvolvedor Júnior</p>
+							</div><!--wraper-titulo-autor-->
+							<div class="img-autor"></div>
+						</div><!--titulo-autor-->
+						<div class="texto-autor">
+							<p>Proin sagittis, risus ut tempus condimentum, urna est volutpat augue, a placerat ligula magna tincidunt sapien.
+								Ut tempus pulvinar ante, at euismod orci.</p>
+						</div><!--texto-autor-->
+					</div><!--sobre-autor-->
+					<div class="sobre-autor">
+						<div class="titulo-autor">
+							<div class="wraper-titulo-autor">
+								<h2>Matsuhe</h2>
+								<p>Desenvolvedor Júnior</p>
+							</div><!--wraper-titulo-autor-->
+							<div class="img-autor"></div>
+						</div><!--titulo-autor-->
+						<div class="texto-autor">
+							<p>Proin sagittis, risus ut tempus condimentum, urna est volutpat augue, a placerat ligula magna tincidunt sapien.
+								Ut tempus pulvinar ante, at euismod orci.</p>
+						</div><!--texto-autor-->
+					</div><!--sobre-autor-->
+					<div class="sobre-autor">
+						<div class="titulo-autor">
+							<div class="wraper-titulo-autor">
+								<h2>Matsuhe</h2>
+								<p>Desenvolvedor Júnior</p>
+							</div><!--wraper-titulo-autor-->
+							<div class="img-autor"></div>
+						</div><!--titulo-autor-->
+						<div class="texto-autor">
+							<p>Proin sagittis, risus ut tempus condimentum, urna est volutpat augue, a placerat ligula magna tincidunt sapien.
+								Ut tempus pulvinar ante, at euismod orci.</p>
+						</div><!--texto-autor-->
+					</div><!--sobre-autor-->
+				</div><!-- scrollWraper -->
+			</div><!-- scrollEquipe -->
 			<div class="slider-bullets">
-				<span style="background-color:rgb(170,170,170);"></span>
-				<span></span>
-				<span></span>
 			</div><!--slider-bullets-->
 		</div><!--part2-->
 		<div class="clear"></div>
@@ -173,9 +199,11 @@
 	</footer>
 
 	<!--Metodo 1-->
-	<script>(g => { var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__", m = document, b = window; b = b[c] || (b[c] = {}); var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams, u = () => h || (h = new Promise(async (f, n) => { await (a = m.createElement("script")); e.set("libraries", [...r] + ""); for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]); e.set("callback", c + ".maps." + q); a.src = `https://maps.${c}apis.com/maps/api/js?` + e; d[q] = f; a.onerror = () => h = n(Error(p + " could not load.")); a.nonce = m.querySelector("script[nonce]")?.nonce || ""; m.head.append(a) })); d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)) })
-			({ key: "AIzaSyCYietGIsTpDorp3gBJQs8KqBYrBSyUu9o", v: "weekly" });
-	</script>
+	<div class="script1">
+		<script>(g => { var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__", m = document, b = window; b = b[c] || (b[c] = {}); var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams, u = () => h || (h = new Promise(async (f, n) => { await (a = m.createElement("script")); e.set("libraries", [...r] + ""); for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]); e.set("callback", c + ".maps." + q); a.src = `https://maps.${c}apis.com/maps/api/js?` + e; d[q] = f; a.onerror = () => h = n(Error(p + " could not load.")); a.nonce = m.querySelector("script[nonce]")?.nonce || ""; m.head.append(a) })); d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)) })
+				({ key: "AIzaSyCYietGIsTpDorp3gBJQs8KqBYrBSyUu9o", v: "weekly" });
+		</script>
+	</div><!-- script -->
 
 	<!--Metodo 2-->
 	<script async src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCYietGIsTpDorp3gBJQs8KqBYrBSyUu9o&callback=Function.prototype' defer></script>
@@ -184,6 +212,7 @@
 	<script src="src/js/function.js"></script>
 	<script src="src/js/menu_responsivo.js"></script>
 	<script src="src/js/menu_scroll.js"></script>
+	<script src="src/js/sliderEquipe.js"></script>
 
 
 
