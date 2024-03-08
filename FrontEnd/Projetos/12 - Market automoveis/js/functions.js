@@ -139,10 +139,10 @@ $(function(){
         /*
           Clicar e ir para div de contato com base no atributo goto
         */
-        var directory = '/'
+        var directory = '/projetos/projeto_05/'
        
         $('[goto=contato]').click(function(){
-            location.href=directory+'index.html?contato';
+            location.href=directory+'?contato';
             return false;
         })
         
@@ -155,10 +155,15 @@ $(function(){
             var curPage = url[url.length-1].split('?');
        
             if(curPage[1] != undefined && curPage[1] == 'contato'){
-              $('header nav a').css('color','black');
-              $('footer nav a').css('color','white');
+              //$('header nav a').css('color','black');
+              //$('footer nav a').css('color','white');
               $('[goto=contato]').css('color','#EB2D2D');
               $('html,body').animate({'scrollTop':$('#contato').offset().top});
+            }else{
+              if(curPage[0] == '')
+                $('a[href=home]').css('color','#EB2D2D');
+              else
+                $('a[href='+curPage[0]+']').css('color','#EB2D2D');
             }
 
         }
