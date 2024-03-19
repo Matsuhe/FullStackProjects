@@ -1,7 +1,6 @@
 $(function(){
 
-
-	$('.menu-mobile').click(function(){
-		$('.menu-mobile').find('ul').slideToggle();
+	$('.mobile-menu').click(function(){
+		$('.mobile-menu').find('ul').slideToggle();
 	})
 })
