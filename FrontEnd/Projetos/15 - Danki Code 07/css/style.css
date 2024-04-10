@@ -51,5 +51,10 @@ nav .brand-logo {
   z-index: 1;
 }
 
+.card-content{
+  text-align: justify;
+  font-size: 14px;
+}
+
 
 
