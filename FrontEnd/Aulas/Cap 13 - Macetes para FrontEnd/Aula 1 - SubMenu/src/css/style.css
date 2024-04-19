@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    height: 100%;
+}
+
+.clear{
+    clear: both;
+}
+
+/* ======= Header ======= */
+
+header{
+    padding: 15px 2%;
+    background: #1976d2;
+}
+
+.container{
+    max-width: 1280px;
+    padding: 0  2%;
+    margin: 0 auto;
+}
+
+.logo{
+    float: left;
+}
+
+.menu-desktop{
+    float: right;
+}
+
+.logo h2 {
+    color: white;
+    margin: 0;
+}
+
+nav.menu-desktop > ul{
+    list-style-type: none;
+    position: relative;
+    top: 5px;
+}
+
+nav.menu-desktop > ul > li{
+    position: relative;
+    display: inline-block;
+    font-size: 18px;
+    margin: 0 15px;
+}
+
+nav.menu-desktop a{
+    text-decoration: none;
+    color: white;
+}
+
+nav.menu-desktop a:hover{
+    text-decoration: underline;
+}
+
+nav.menu-desktop > ul > li:hover > ul.submenu-desktop{
+    display: block;
+}
+
+ul.submenu-desktop{
+    text-align: center;
+    display: none;
+    position: absolute;
+    top: 20px;
+    background: #1976d2;
+    width: 220px;
+    list-style-type: none;
+    border: 1px solid #3819d2;
+}
+
+nav.menu-desktop .centro{
+    position: absolute;
+    left: -75px;
+}
+
+nav.menu-desktop .direta{
+    position: absolute;
+    right: 0px;
+}
+
+ul.submenu-desktop > li:not(:last-child){
+    border-bottom: 1px solid #3819d2;
+}
+
+ul.submenu-desktop > li > a{
+    padding: 5px;
+}
+
+
+/* === estilo para nav-mobile === */
+
+nav-mobile.menu-mobile{
+    float: right;
+    display: none;
+}
+
+nav-mobile.menu-mobile > i{
+    cursor: pointer;
+    font-size: 25px;
+    color: white;
+}
+
+nav-mobile.menu-mobile > ul{
+    display: none;
+    position: absolute;
+    right: 0;
+    top:57px;
+    background: #1963d2;
+    width: 30%;
+    list-style-type: none;
+}
+
+nav-mobile.menu-mobile > ul > li {
+    border-bottom: 1px solid #3819d2;
+}
+
+nav-mobile.menu-mobile > ul > li > a {
+    background: #3819d21b;
+    width: 100%;
+    display: inline-block;
+    padding: 3px;
+    text-align: center;
+    color:  white;
+    text-decoration: none;
+    width: 100%;
+    font-size: 20px;
+    border-bottom: 1px solid #3819d2;
+}
+
+ul.submenu-mobile{
+    list-style-type: none;
+    text-align: center;
+    background: #3819d21b;
+}
+
+ul.submenu-mobile a{
+    display: block;
+    color: rgba(255, 255, 255, 0.756);
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.menu-mobile  a:hover{
+    background: #196cd2;
+}
+
+
+@media screen and (max-width: 768px ){
+    nav.menu-desktop{
+        display: none;
+    }
+    nav-mobile.menu-mobile{
+        display: block;
+    }
+
+}
